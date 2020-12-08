@@ -1,0 +1,48 @@
+List of Commands :
+
+git --version 
+	- Tell us the current version of installed GitHub.
+
+git status
+	- It lists all the modified or new files which are ready to add to the local repository.
+
+git init
+	- It is used to initialize the Git Repositories.
+	- It will create the local repository.
+	- If repository is already exists, then it re-initializes the repository.
+	- It is initialization command.
+
+git add
+	- It updates the index using the current content found in the working tree and then prepares the content in the staging area for the next commit.
+	- It will add the files into the repository by indexing them.
+	eg.
+	git add <directory>
+	git add <filename>
+	git add -A 
+		- For adding all the files 
+	git add *
+
+git diff
+	- To compare the files / directories for modification.
+
+git rm --cached <demo.txt>
+	- It removes the files from staging environment or you can say that it removes the index.
+	eg.
+	git rm --cached <demo.txt> -f
+		- For forcefully removal
+
+git commit -m "First Version of File"
+	- It commits the file into the repository.
+	- A new version of my repository is created.
+
+git log 
+	- List all the commits done in the repository.
+	- It display version history.
+
+git ls-files
+	- To list all the files / folders in the git commited repository. 
+
+git show
+	- It shows the metadata and content changes of the specified commit.
+	eg.
+	git show <commitID>
